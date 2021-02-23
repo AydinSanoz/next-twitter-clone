@@ -1,5 +1,4 @@
 import Button from '../components/button';
-
 function HomePage() {
 	return (
 		<div>

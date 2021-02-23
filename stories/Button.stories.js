@@ -3,11 +3,10 @@ import React from 'react';
 import Button from '../components/button';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Button',
 };
 
-export const emoji = ()=>(
+export const basebutton = ()=>(
   <Button>
     Hello
   </Button>
