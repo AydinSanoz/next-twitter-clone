@@ -2,7 +2,7 @@ import Button from '../components/button';
 function HomePage() {
 	return (
 		<div>
-			Welcome to Next.js!
+			<h1>Welcome to Next.js!</h1>
 			<Button>Click me</Button>
 		</div>
 	);
