@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuButton from './menuButton';
-import TitleButton from './titleButton';
+import TitleBold from './titleBold';
 import {
 	Twitter,
 	Home,
@@ -11,39 +11,41 @@ import {
 	List,
 	Profile,
 	More,
+	Homefill,
 } from '../components/Icons';
 import cn from 'classnames';
 import styles from './nav.module.css';
 
-function Nav({ className, ...props }) {
+function Nav({ className, selectedKey, ...props }) {
 	return (
 		<nav className={cn(styles.nav, className)} {...props}>
 			<MenuButton>
 				<Twitter />
 			</MenuButton>
-			<MenuButton>
-				<Home /> <TitleButton>Home</TitleButton>
+			<MenuButton selected={selectedKey === 'Home'}>
+				{selectedKey === 'Home' ? <Homefill /> : <Home />}
+				<TitleBold>Home</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<Explore /> <TitleButton>Explore</TitleButton>
+			<MenuButton selected={selectedKey === 'Explore'}>
+				<Explore /> <TitleBold>Explore</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<Notification /> <TitleButton>Notification</TitleButton>
+			<MenuButton notify={7} selected={selectedKey === 'Notification'}>
+				<Notification /> <TitleBold>Notification</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<Message /> <TitleButton>Message</TitleButton>
+			<MenuButton selected={selectedKey === 'Message'}>
+				<Message /> <TitleBold>Message</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<Bookmark /> <TitleButton>Bookmark</TitleButton>
+			<MenuButton selected={selectedKey === 'Bookmark'}>
+				<Bookmark /> <TitleBold>Bookmark</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<List /> <TitleButton>List</TitleButton>
+			<MenuButton selected={selectedKey === 'List'}>
+				<List /> <TitleBold>List</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<Profile /> <span>Profile</span>
+			<MenuButton selected={selectedKey === 'Profile'}>
+				<Profile /> <TitleBold>Profile</TitleBold>
 			</MenuButton>
-			<MenuButton>
-				<More /> <span>More</span>
+			<MenuButton selected={selectedKey === 'More'}>
+				<More /> <TitleBold>More</TitleBold>
 			</MenuButton>
 		</nav>
 	);

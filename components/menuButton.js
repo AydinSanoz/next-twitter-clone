@@ -3,9 +3,17 @@ import styles from './menuButton.module.css';
 import Button from './button';
 import cn from 'classnames';
 
-function MenuButton({ children, className, ...props }) {
+function MenuButton({ notify, children, className, selected, ...props }) {
 	return (
-		<Button className={cn(styles.menuButton, className)} {...props}>
+		<Button
+			className={cn(
+				styles.menuButton,
+				selected && styles.selectedMenuButton,
+				className
+			)}
+			{...props}
+		>
+			{notify && <span className={styles.notify}>{notify}</span>}
 			{children}
 		</Button>
 	);
