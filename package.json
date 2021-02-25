@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o ./public/ui",
     "svg": "npx @svgr/cli --icon --replace-attr-values '#fff=currentColor' -d ./components/Icons ./Icons",
     "sass": "sass --watch . "
   },
