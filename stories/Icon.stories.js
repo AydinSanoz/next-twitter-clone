@@ -6,7 +6,7 @@ export default {
 };
 
 export const Icon = () => (
-	<div className="con">
+	<div className="Icon">
 		<Icons.Bookmarkfill />
 		<Icons.Calender />
 		<Icons.Chart />
