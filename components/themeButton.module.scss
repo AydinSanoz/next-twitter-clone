@@ -1,0 +1,13 @@
+.themeButton {
+	padding: 10px;
+	border-radius: 99px;
+	background-color: var(--c-template);
+	padding-left: 28px;
+	padding-right: 28px;
+	font-size: 19px;
+	width: 118px;
+	&:hover {
+		background-color: var(--c-template);
+		color: var(--c-text-primary);
+	}
+}

@@ -1,0 +1,15 @@
+.stack {
+	display: flex;
+	align-items: center;
+	* + * {
+		margin-left: var(--gab);
+	}
+}
+
+.column {
+	flex-direction: column;
+	* + * {
+		margin-left: 0px;
+		margin-top: var(--gab);
+	}
+}

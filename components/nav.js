@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuButton from './menuButton';
-import TitleBold from './titleBold';
+import TextBold from './textBold';
 import {
 	Twitter,
 	Home,
@@ -24,28 +24,28 @@ function Nav({ className, selectedKey, ...props }) {
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'Home'}>
 				{selectedKey === 'Home' ? <Homefill /> : <Home />}
-				<TitleBold>Home</TitleBold>
+				<TextBold>Home</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'Explore'}>
-				<Explore /> <TitleBold>Explore</TitleBold>
+				<Explore /> <TextBold>Explore</TextBold>
 			</MenuButton>
 			<MenuButton notify={7} selected={selectedKey === 'Notification'}>
-				<Notification /> <TitleBold>Notification</TitleBold>
+				<Notification /> <TextBold>Notification</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'Message'}>
-				<Message /> <TitleBold>Message</TitleBold>
+				<Message /> <TextBold>Message</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'Bookmark'}>
-				<Bookmark /> <TitleBold>Bookmark</TitleBold>
+				<Bookmark /> <TextBold>Bookmark</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'List'}>
-				<List /> <TitleBold>List</TitleBold>
+				<List /> <TextBold>List</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'Profile'}>
-				<Profile /> <TitleBold>Profile</TitleBold>
+				<Profile /> <TextBold>Profile</TextBold>
 			</MenuButton>
 			<MenuButton selected={selectedKey === 'More'}>
-				<More /> <TitleBold>More</TitleBold>
+				<More /> <TextBold>More</TextBold>
 			</MenuButton>
 		</nav>
 	);
