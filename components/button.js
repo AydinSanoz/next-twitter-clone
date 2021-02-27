@@ -2,9 +2,17 @@ import React from 'react';
 import styles from './button.module.css';
 import cn from 'classnames';
 
-function Button({ children, className, ...props }) {
+function Button({ big = false, full = false, children, className, ...props }) {
 	return (
-		<button className={cn(styles.button, className)} {...props}>
+		<button
+			className={cn(
+				styles.button,
+				full && styles.fullWidth,
+				big && styles.big,
+				className
+			)}
+			{...props}
+		>
 			{children}
 		</button>
 	);
