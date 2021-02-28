@@ -1,0 +1,17 @@
+.box {
+	position: absolute;
+	bottom: 10px;
+}
+.body {
+	font-size: 15px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.slug {
+	color: var(--c-text-secondary);
+}
+.icon {
+	margin-left: auto;
+	margin-right: 10px;
+}
