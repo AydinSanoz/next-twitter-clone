@@ -1,0 +1,10 @@
+.extra {
+	background-color: #c3c;
+	width: 350px;
+}
+
+@media screen and (max-width: 985px) {
+	.extra {
+		display: none;
+	}
+}
