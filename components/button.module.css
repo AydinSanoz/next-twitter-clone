@@ -1,23 +1,26 @@
 .button {
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--c-text-primary);
-  transition: var(--fade);
+	background-color: transparent;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--c-text-primary);
+	transition: var(--fade);
+	border-radius: 99px;
+	outline: none;
 }
 .button:hover {
-  background-color: var(--c-button-color-20);
-  color: var(--c-template);
+	background-color: var(--c-button-color-20);
+	color: var(--c-template);
 }
 
 .fullWidth {
-  width: 100% !important;
+	width: 100% !important;
 }
 
 .big {
-  height: 48px;
+	height: 48px;
 }
 
 /*# sourceMappingURL=button.module.css.map */

@@ -1,11 +1,5 @@
 .menuButton {
   position: relative;
-  color: var(--c-text-primary);
-  padding: 10px;
-  border-radius: 99px;
-  display: flex;
-  align-items: center;
-  transition: var(--fade);
 }
 .menuButton svg {
   font-size: 26px;
