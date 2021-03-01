@@ -7,4 +7,5 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-color: var(--c-bg-primary);
+	color: var(--c-text-primary);
 }

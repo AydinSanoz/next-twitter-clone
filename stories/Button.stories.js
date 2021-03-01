@@ -25,9 +25,11 @@ export const menuButton = () => (
 export const themeButton = () => {
 	return (
 		<Stack gab={40} column>
-			<ThemeButton>Tweet</ThemeButton>
-			<ThemeButton full>Tweet</ThemeButton>
-			<ThemeButton full big>
+			<ThemeButton flat={boolean('flat', false)}>Tweet</ThemeButton>
+			<ThemeButton flat={boolean('flat1', false)} full>
+				Tweet
+			</ThemeButton>
+			<ThemeButton flat={boolean('flat2', false)} full big>
 				{' '}
 				Tweet
 			</ThemeButton>
@@ -36,5 +38,5 @@ export const themeButton = () => {
 };
 
 export const nav = () => (
-	<Nav disabled={boolean('flat', false)} selectedKey="Home"></Nav>
+	<Nav flat={boolean('disabled', false)} selectedKey="Home"></Nav>
 );
