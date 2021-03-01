@@ -1,10 +1,19 @@
-import Button from '../components/button';
+import React from 'react';
+import Layout from '../components/layout';
+import useWindowSize from '../hooks/useWindowSize';
+import Sidebar from '../components/col-sidebar';
+import Main from '../components/col-main';
+import Extra from '../components/col-extra';
+import CONSTANT from '../constants/constants';
+
 function HomePage() {
+	const size = useWindowSize();
 	return (
-		<div>
-			<h1>Welcome to Next.js!</h1>
-			<Button>Click me</Button>
-		</div>
+		<Layout>
+			<Sidebar flat={size.width < CONSTANT.DESKTOP}>{size.width}</Sidebar>
+			<Main>{JSON.stringify(size)}</Main>
+			<Extra>{CONSTANT.DESKTOP}</Extra>
+		</Layout>
 	);
 }
 

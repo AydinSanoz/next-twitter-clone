@@ -1,5 +1,11 @@
+.nav {
+}
 .nav button + button {
-  margin-top: 8px;
+	margin-top: 8px;
+}
+.text {
+	margin-left: 20px;
+	margin-right: 15px;
 }
 
 /*# sourceMappingURL=nav.module.css.map */

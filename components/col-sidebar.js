@@ -8,15 +8,14 @@ function Sidebar({ children, flat, ...props }) {
 	return (
 		<div className={styles.sidebar} {...props}>
 			<div className={styles.nav}>
-				<p>{JSON.stringify(flat)}</p>
-				<Nav />
+				<Nav flat={flat} />
 			</div>
 
 			<div className={styles.tweet}>
-				<ThemeButton full big />
+				<ThemeButton flat={flat} full big />
 			</div>
 			<div className={styles.profile}>
-				<ProfileBox full />
+				<ProfileBox flat={flat} full />
 			</div>
 		</div>
 	);

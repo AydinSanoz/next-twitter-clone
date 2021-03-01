@@ -6,16 +6,19 @@ import Nav from '../components/nav';
 import { Home } from '../components/Icons';
 import TitleBold from '../components/textBold';
 import Stack from '../components/stack';
+import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
 export default {
 	title: 'Buttons',
+	decorators: [withKnobs],
 };
 
 export const baseButton = () => <Button>Save</Button>;
 
 export const menuButton = () => (
 	<MenuButton>
-		<Home /> <TitleBold>Home</TitleBold>
+		<Home />
+		<TitleBold>Home</TitleBold>
 	</MenuButton>
 );
 
@@ -32,4 +35,6 @@ export const themeButton = () => {
 	);
 };
 
-export const nav = () => <Nav selectedKey="Home"></Nav>;
+export const nav = () => (
+	<Nav disabled={boolean('flat', false)} selectedKey="Home"></Nav>
+);

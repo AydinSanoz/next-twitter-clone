@@ -13,3 +13,10 @@
 	margin-left: auto;
 	margin-right: 10px;
 }
+
+@media screen and (max-width: 1240px) {
+	.box {
+		width: 43px;
+		height: 43px;
+	}
+}

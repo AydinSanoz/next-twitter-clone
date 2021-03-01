@@ -80,14 +80,19 @@ const Menu = [
 	},
 ];
 
-function Nav({ className, selectedKey = 'Home', ...props }) {
+function Nav({ flat = false, className, selectedKey = 'Home', ...props }) {
 	return (
 		<nav className={cn(styles.nav, className)} {...props}>
 			{Menu.map((menu) => {
+				const showTitle = !flat && menu.name.length > 0;
 				return (
 					<MenuButton notify={menu.notify} selected={selectedKey === menu.name}>
 						{selectedKey === menu.name ? menu.selectedIcon : menu.icon}
-						<TextBold bold>{menu.name}</TextBold>
+						{showTitle && (
+							<TextBold className={styles.text} bold>
+								{menu.name}
+							</TextBold>
+						)}
 					</MenuButton>
 				);
 			})}
