@@ -4,12 +4,20 @@ import Nav from '../components/nav';
 import ThemeButton from './themeButton';
 import ProfileBox from './profileBox';
 
-function Sidebar({ children, ...props }) {
+function Sidebar({ children, flat, ...props }) {
 	return (
 		<div className={styles.sidebar} {...props}>
-			<Nav />
-			<ThemeButton full big />
-			<ProfileBox full />
+			<div className={styles.nav}>
+				<p>{JSON.stringify(flat)}</p>
+				<Nav />
+			</div>
+
+			<div className={styles.tweet}>
+				<ThemeButton full big />
+			</div>
+			<div className={styles.profile}>
+				<ProfileBox full />
+			</div>
 		</div>
 	);
 }
