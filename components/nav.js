@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import { useRouter } from 'next/router';
 
 import styles from './nav.module.css';
 import { Menu } from '../constants/constants';
@@ -7,21 +8,27 @@ import { Menu } from '../constants/constants';
 import MenuButton from './menuButton';
 import TextBold from './textBold';
 
-function Nav({ flat = false, className, selectedKey = 'Home', ...props }) {
+function Nav({ flat = false, className, ...props }) {
+	const router = useRouter();
 	return (
 		<nav className={cn(styles.nav, className)} {...props}>
 			{Menu.map((menu) => {
 				const showTitle = !flat && menu.name.length > 0;
+				const selected = router.pathname === menu.path;
 				return (
 					<MenuButton
+						className="MenuButton"
 						key={menu.key}
 						notify={menu.notify}
-						selected={selectedKey === menu.name}
 						href={menu.path}
+						selected={selected}
 					>
-						{selectedKey === menu.name ? menu.selectedIcon : menu.icon}
+						{selected ? menu.selectedIcon : menu.icon}
 						{showTitle && (
-							<TextBold className={styles.text} bold>
+							<TextBold
+								className={cn(styles.text, selected && styles.selectedText)}
+								bold
+							>
 								{menu.name}
 							</TextBold>
 						)}

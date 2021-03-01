@@ -4,8 +4,15 @@
 .menuButton svg {
 	font-size: 26px;
 }
+.menuButton svg + * {
+	margin-left: 20px;
+	margin-right: 15px;
+}
 
-.selectedMenuButton {
+.selectedMenuButton svg + * {
+	color: var(--c-template);
+}
+.selectedMenuButton svg {
 	color: var(--c-template);
 }
 

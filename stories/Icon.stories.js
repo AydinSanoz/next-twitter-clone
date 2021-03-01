@@ -9,7 +9,7 @@ export default {
 
 export const Icon = () => (
 	<div className="Icon">
-		<Icons.Bookmarkfill />
+		<Icons.Bookmarksfill />
 		<Icons.Calender />
 		<Icons.Chart />
 		<Icons.Emoji />
@@ -20,15 +20,15 @@ export const Icon = () => (
 		<Icons.Homefill />
 		<Icons.Like />
 		<Icons.Likefill />
-		<Icons.List />
+		<Icons.Lists />
 		<Icons.Listfill />
 		<Icons.Media />
 		<Icons.Message />
 		<Icons.Messages />
 		<Icons.Messagesfill />
 		<Icons.More />
-		<Icons.Notification />
-		<Icons.Notificationfill />
+		<Icons.Notifications />
+		<Icons.Notificationsfill />
 		<Icons.Option />
 		<Icons.Profile />
 		<Icons.Profilefill />
