@@ -21,7 +21,7 @@ export const Icon = () => (
 		<Icons.Like />
 		<Icons.Likefill />
 		<Icons.Lists />
-		<Icons.Listfill />
+		<Icons.Listsfill />
 		<Icons.Media />
 		<Icons.Message />
 		<Icons.Messages />

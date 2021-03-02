@@ -10,8 +10,12 @@ export const Menu = [
 		key: '',
 		name: '',
 		path: '/',
-		icon: <Icon.Twitter style={{ fontSize: 30 }} />,
-		selectedIcon: <Icon.Twitter style={{ fontSize: 30 }} />,
+		icon: (
+			<Icon.Twitter style={{ fontSize: 30, color: 'var(--c-text-primary)' }} />
+		),
+		selectedIcon: (
+			<Icon.Twitter style={{ fontSize: 30, color: 'var(--c-text-primary)' }} />
+		),
 		notify: null,
 	},
 	{

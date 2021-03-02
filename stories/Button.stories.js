@@ -6,7 +6,7 @@ import Nav from '../components/nav';
 import { Home } from '../components/Icons';
 import TitleBold from '../components/textBold';
 import Stack from '../components/stack';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 export default {
 	title: 'Buttons',
@@ -37,6 +37,4 @@ export const themeButton = () => {
 	);
 };
 
-export const nav = () => (
-	<Nav flat={boolean('disabled', false)} selectedKey="Home"></Nav>
-);
+export const nav = () => <Nav>hello</Nav>;
