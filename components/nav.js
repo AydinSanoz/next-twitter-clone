@@ -11,13 +11,13 @@ import TextBold from './textBold';
 function Nav({ flat = false, className, ...props }) {
 	const router = useRouter();
 	return (
-		<nav className={cn(styles.nav, className)} {...props}>
+		<nav className={styles.nav} {...props}>
 			{Menu.map((menu) => {
 				const showTitle = !flat && menu.name.length > 0;
 				const selected = router.pathname === menu.path;
 				return (
 					<MenuButton
-						className="MenuButton"
+						className={cn(styles.menuButton, menu.key)}
 						key={menu.key}
 						notify={menu.notify}
 						href={menu.path}

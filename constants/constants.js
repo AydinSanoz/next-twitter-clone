@@ -7,15 +7,11 @@ export default {
 
 export const Menu = [
 	{
-		key: '',
+		key: 'Twitter',
 		name: '',
 		path: '/',
-		icon: (
-			<Icon.Twitter style={{ fontSize: 30, color: 'var(--c-text-primary)' }} />
-		),
-		selectedIcon: (
-			<Icon.Twitter style={{ fontSize: 30, color: 'var(--c-text-primary)' }} />
-		),
+		icon: <Icon.Twitter style={{ fontSize: 30 }} />,
+		selectedIcon: <Icon.Twitter style={{ fontSize: 30 }} />,
 		notify: null,
 	},
 	{

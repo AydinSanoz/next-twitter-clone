@@ -1,6 +1,9 @@
 .themeButton {
 	background-color: var(--c-template);
 }
+.themeButton * {
+	color: #fff;
+}
 
 .themeButton:hover {
 	background-color: var(--c-template);

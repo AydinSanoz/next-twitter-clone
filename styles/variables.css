@@ -9,3 +9,30 @@
 	--c-text-primary: #ffffff;
 	--fade: 120ms;
 }
+
+.dark:root {
+	--c-button-color-20: rgba(29, 161, 242, 0.2);
+	--c-bg-primary: #000000;
+	--c-bg-trends: #15181c;
+	--c-template: #1da1f2;
+	--c-border-color: #2f3336;
+	--c-text-secondary: #5b7083;
+	--c-text-primary: #ffffff;
+}
+.dim:root {
+	--c-button-color-20: rgba(29, 161, 242, 0.2);
+	--c-bg-primary: rgb(21, 32, 43);
+	--c-bg-trends: #15181c;
+	--c-template: #1da1f2;
+	--c-border-color: #38444d;
+	--c-text-secondary: #5b7083;
+	--c-text-primary: #ffffff;
+}
+.light:root {
+	--c-button-color-20: rgba(29, 161, 242, 0.2);
+	--c-bg-primary: #fff;
+	--c-bg-trends: #15181c;
+	--c-template: #1da1f2;
+	--c-border-color: #ebeef0;
+	--c-text-primary: #000;
+}

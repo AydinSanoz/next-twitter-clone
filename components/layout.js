@@ -12,7 +12,7 @@ function Layout({ children, ...props }) {
 	const size = useWindowSize();
 	return (
 		<div className={styles.layout}>
-			<Sidebar flat={size.width < CONSTANT.DESKTOP}>{size.width}</Sidebar>
+			<Sidebar flat={size.width < CONSTANT.DESKTOP}></Sidebar>
 			<Main>{children}</Main>
 			{size.width > CONSTANT.TABLET && <Extra></Extra>}
 		</div>
