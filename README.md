@@ -11,7 +11,7 @@
 - [Svgr](https://react-svgr.com/)
 
 ### Todo
-- [ ] Tema Desteği
+- [x] Tema Desteği
 - [ ] Tweet Componenti
 - [ ] Timeline için Api
 - [ ] Tweet gönderme için modal

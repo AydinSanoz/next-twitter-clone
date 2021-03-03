@@ -3,9 +3,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
-.nav a:global(.Twitter) {
-	color: var(--c-template);
-}
 
 .nav a + a {
 	margin-top: 8px;

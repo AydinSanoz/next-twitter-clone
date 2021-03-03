@@ -12,7 +12,7 @@
 	text-decoration: none;
 }
 .button:hover {
-	background-color: var(--c-button-color-20);
+	background-color: var(--c-button-color-10);
 	color: var(--c-template);
 }
 

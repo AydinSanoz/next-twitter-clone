@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 50px;
+	background-color: rgb(145, 105, 105);
+	border: 5px solid rgb(206, 91, 91);
+	border-radius: 20px;
+	padding: 20px;
 }
 .label {
 	display: flex;
