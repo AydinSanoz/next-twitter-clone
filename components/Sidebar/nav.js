@@ -3,7 +3,7 @@ import cn from 'classnames';
 import { useRouter } from 'next/router';
 
 import styles from './nav.module.css';
-import { Menu } from '../constants/constants';
+import { Menu } from '../../constants/constants';
 
 import MenuButton from './menuButton';
 import TextBold from './textBold';

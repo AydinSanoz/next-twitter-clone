@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Icons from '../components/Icons';
-import Photo from '../components/photo';
-import ProfileBox from '../components/profileBox';
+import Photo from '../components/ProfileBox/photo';
+import ProfileBox from '../components/ProfileBox/profileBox';
 
 export default {
 	title: 'Icons',

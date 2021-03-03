@@ -1,10 +1,9 @@
-import { StyleSheet } from 'globalthis/implementation';
 import React from 'react';
 import Photo from './photo';
-import TextBold from './textBold';
-import { Option } from './Icons';
+import TextBold from '../Sidebar/textBold';
+import { Option } from '../Icons';
 import styles from './profileBox.module.css';
-import Button from './button';
+import Button from '../Sidebar/button';
 
 function ProfileBox({
 	flat = false,

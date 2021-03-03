@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './themeButton.module.css';
 import Button from './button';
 import cn from 'classnames';
-import { Tweet } from './Icons';
+import { Tweet } from '../Icons';
 import TextBold from './textBold';
 
 function ThemeButton({

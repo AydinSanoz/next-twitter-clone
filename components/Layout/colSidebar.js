@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './col-sidebar.module.css';
-import Nav from '../components/nav';
-import ThemeButton from './themeButton';
-import ProfileBox from './profileBox';
+import styles from './colSidebar.module.css';
+import Nav from '../Sidebar/nav';
+import ThemeButton from '../Sidebar/themeButton';
+import ProfileBox from '../profileBox/profileBox';
 
 function Sidebar({ children, flat, ...props }) {
 	return (

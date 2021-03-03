@@ -1,12 +1,12 @@
 import React from 'react';
 
-import useWindowSize from '../hooks/useWindowSize';
+import useWindowSize from '../../hooks/useWindowSize';
 import styles from './layout.module.css';
-import CONSTANT from '../constants/constants';
+import CONSTANT from '../../constants/constants';
 
-import Sidebar from '../components/col-sidebar';
-import Main from '../components/col-main';
-import Extra from '../components/col-extra';
+import Sidebar from './colSidebar';
+import Main from './colMain';
+import Extra from './colExtra';
 
 function Layout({ children, ...props }) {
 	const size = useWindowSize();

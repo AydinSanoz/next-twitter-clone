@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout/layout';
 
-function Explore({ Children }) {
+function Explore({ children }) {
 	return <Layout>Explore</Layout>;
 }
 

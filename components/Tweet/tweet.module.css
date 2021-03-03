@@ -1,0 +1,44 @@
+.tweet {
+	padding: 15px 15px 4px;
+	display: grid;
+	grid-template-areas: 'avatar body';
+	grid-template-columns: 50px 1fr;
+	border-bottom: 1px solid var(--c-border-color);
+}
+.avatar {
+	grid-area: avatar;
+}
+.body {
+	grid-area: body;
+	font-size: 15px;
+	text-align: justify;
+	div + div {
+		padding-top: 8px;
+	}
+}
+.header {
+	span + span {
+		padding-left: 8px;
+		color: var(--c-text-secondary);
+	}
+}
+.tweetBody {
+	white-space: pre-wrap;
+	text-align: justify;
+}
+.footer {
+	display: flex;
+	align-items: center;
+	margin-left: -10px;
+}
+.footerButton {
+	flex: 1;
+	font-size: 19px;
+	color: var(--c-text-secondary);
+	> span {
+		font-size: 0.8em;
+	}
+}
+.actions {
+	color: inherit;
+}
