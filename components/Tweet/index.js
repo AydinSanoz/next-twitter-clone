@@ -6,52 +6,70 @@ import Photo from '../profileBox/photo';
 import styles from './tweet.module.css';
 import formatDistanceToNowStrict from 'date-fns/formatDistanceToNow';
 
-function Tweet({ className, children, ...props }) {
-	const tweet = {
-		avatar: null,
-		name: 'Cansu Dere',
-		slug: 'cansudere',
-		datetime: formatDistanceToNowStrict(new Date('2021, 01, 02'), {
-			includeSeconds: false,
-		}),
-		tweet: {
-			text:
-				'Hiçbir korkuluğu kurt, ayı ve leopar şeklinde yapmamışlar.Zannediyorum ki insanlardan daha korkunç bir varlık bulamamışlar.~Thomas Hobbes ',
-			reply: 8,
-			retweet: 12,
-			like: 7,
-			share: 3,
-		},
-	};
+// adult: false
+// backdrop_path: "/uuh6uNEGqLCU7wQ2L4xMqYv0DPr.jpg"
+// genre_ids: (3) [878, 12, 28]
+// id: 1895
+// original_language: "en"
+// original_title: "Star Wars: Episode III - Revenge of the Sith"
+// overview: "The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side."
+// popularity: 29.536
+// poster_path: "/xfSAoBEm9MNBjmlNcDYLvLSMlnq.jpg"
+// release_date: "2005-05-17"
+// title: "Star Wars: Episode III - Revenge of the Sith"
+// video: false
+// vote_average: 7.3
+// vote_count: 10083
+
+function Tweet(props) {
+	const src = props.poster_path
+		? `https://image.tmdb.org/t/p/w500${props.poster_path}`
+		: 'https://pbs.twimg.com/profile_images/1331855336903495680/JlY7G8Qs_400x400.jpg';
+
 	return (
-		<article className={styles.tweet}>
+		<article className={styles.tweet} {...props}>
+			{/* Avatar */}
 			<div className={styles.avatar}>
-				<Photo />
+				<Photo src={src} alt={props.title} />
 			</div>
 
+			{/* Body- */}
 			<div className={styles.body}>
+				{/* header */}
 				<div className={styles.header}>
-					<span>{tweet.name}</span>
-					<span>@{tweet.slug}</span>
-					<span>{tweet.datetime}</span>
+					<span>{props.title}</span>
+					<span>@{props.title}</span>
+					<span>{formatDistanceToNowStrict(new Date(props.release_date))}</span>
 				</div>
-				<div className={styles.tweetBody}>{tweet.tweet.text}</div>
+				{/* text */}
+				<div className={styles.tweetBody}>{props.overview}</div>
+
+				{/* Image */}
+				<div className={styles.container}>
+					<img src={src} alt={props.title} className={styles.img} />
+				</div>
+
+				{/* footer */}
 				<div className={styles.footer}>
+					{/* reply */}
 					<IconButton className={styles.footerButton}>
 						<Icon.Message className={styles.actions} />
-						<span>{tweet.tweet.reply}</span>
+						<span>{props.popularity}</span>
 					</IconButton>
+					{/* retweet */}
 					<IconButton className={styles.footerButton}>
 						<Icon.Retweet className={styles.actions} />
-						<span>{tweet.tweet.retweet}</span>
+						<span>{props.vote_average}</span>
 					</IconButton>
+					{/* Like */}
 					<IconButton className={styles.footerButton}>
 						<Icon.Like className={styles.actions} />
-						<span>{tweet.tweet.like}</span>
+						<span>{props.vote_count}</span>
 					</IconButton>
+					{/* share */}
 					<IconButton className={styles.footerButton}>
 						<Icon.Share className={styles.actions} />
-						<span>{tweet.tweet.share}</span>
+						<span>{props.vote_count}</span>
 					</IconButton>
 				</div>
 			</div>

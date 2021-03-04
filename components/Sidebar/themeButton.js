@@ -7,7 +7,6 @@ import TextBold from './textBold';
 
 function ThemeButton({
 	flat = false,
-
 	children = 'Tweet',
 	className,
 	...props

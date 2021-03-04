@@ -1,11 +1,12 @@
 .sidebar {
-	position: relative;
 	padding-right: 12px;
 	padding-left: 12px;
 	display: flex;
-
 	flex-direction: column;
 	max-width: 251px;
+	height: 100vh;
+	position: sticky;
+	top: 0;
 }
 .tweet {
 	margin-top: 20px;

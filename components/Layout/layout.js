@@ -14,7 +14,7 @@ function Layout({ children, ...props }) {
 		<div className={styles.layout}>
 			<Sidebar flat={size.width < CONSTANT.DESKTOP}></Sidebar>
 			<Main>{children}</Main>
-			{size.width > CONSTANT.TABLET && <Extra></Extra>}
+			{size.width > CONSTANT.TABLET && <Extra>Extra</Extra>}
 		</div>
 	);
 }

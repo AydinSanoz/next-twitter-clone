@@ -12,6 +12,7 @@
 
 ### Todo
 - [x] Tema Desteği
-- [ ] Tweet Componenti
+- [x] Tweet Componenti
 - [ ] Timeline için Api
 - [ ] Tweet gönderme için modal
+
