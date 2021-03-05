@@ -3,7 +3,7 @@ import formatDistanceToNowStrict from 'date-fns/formatDistanceToNow';
 
 import IconButton from '../IconButton';
 import * as Icon from '../Icons';
-import Photo from '../profileBox/photo';
+import Photo from '../ProfileBox/photo';
 
 import styles from './tweet.module.css';
 

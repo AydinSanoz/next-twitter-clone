@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './colSidebar.module.css';
 import Nav from '../Sidebar/nav';
 import ThemeButton from '../Sidebar/themeButton';
-import ProfileBox from '../profileBox/profileBox';
+import ProfileBox from '../ProfileBox/profileBox';
 
 function Sidebar({ children, flat, ...props }) {
 	return (
