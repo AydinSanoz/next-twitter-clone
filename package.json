@@ -23,7 +23,11 @@
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^17.0.1",
     "style-loader": "^2.0.0",
-    "swr": "^0.4.2"
+    "swr": "^0.4.2",
+    "postcss": "^8.2.6",
+    "postcss-nested": "^5.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
@@ -33,10 +37,7 @@
     "@storybook/addon-links": "^6.1.18",
     "@storybook/react": "^6.1.18",
     "@svgr/cli": "^5.5.0",
-    "axios": "^0.21.1",
-    "babel-loader": "^8.2.2",
-    "postcss": "^8.2.6",
-    "postcss-nested": "^5.0.4",
-    "postcss-preset-env": "^6.7.0"
+    "babel-loader": "^8.2.2"
+   
   }
 }
