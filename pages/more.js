@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout/layout';
-import Theme from '../components/theme/theme';
+import Theme from '../components/Theme/theme';
 
 function More({ Children }) {
 	return (
