@@ -1,10 +1,11 @@
 import React from 'react';
-import IconButton from '../IconButton';
+import formatDistanceToNowStrict from 'date-fns/formatDistanceToNow';
 
+import IconButton from '../IconButton';
 import * as Icon from '../Icons';
 import Photo from '../profileBox/photo';
+
 import styles from './tweet.module.css';
-import formatDistanceToNowStrict from 'date-fns/formatDistanceToNow';
 
 // adult: false
 // backdrop_path: "/uuh6uNEGqLCU7wQ2L4xMqYv0DPr.jpg"
