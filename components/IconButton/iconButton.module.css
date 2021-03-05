@@ -7,10 +7,10 @@
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-	svg {
-		border-radius: 99px;
-		padding: 8px;
-	}
+}
+.button svg {
+	border-radius: 99px;
+	padding: 8px;
 }
 .button svg:hover {
 	background-color: var(--c-button-color-10);
