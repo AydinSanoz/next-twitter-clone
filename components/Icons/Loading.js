@@ -15,7 +15,7 @@ function CircularBar(props) {
 				cy="50"
 				r="36"
 				stroke="#1da1f2"
-				stroke-width="4"
+				strokeWidth="4"
 				fill="none"
 			></circle>
 			<circle
@@ -23,8 +23,8 @@ function CircularBar(props) {
 				cy="50"
 				r="36"
 				stroke="#05115b"
-				stroke-width="3"
-				stroke-linecap="round"
+				strokeWidth="3"
+				strokeLinecap="round"
 				fill="none"
 			>
 				<animateTransform
