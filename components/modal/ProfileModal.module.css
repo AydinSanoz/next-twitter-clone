@@ -1,0 +1,38 @@
+.modal {
+	width: 298px;
+	height: 195px;
+	border-radius: 20px;
+	background-color: var(--c-bg-primary);
+	color: var(--c-text-primary);
+	box-shadow: var(--c-shadow1), var(--c-shadow2);
+	outline: none;
+	position: absolute;
+	bottom: 60px;
+	left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.profile {
+	border-bottom: 1px solid var(--c-border-color);
+	padding: 20px 10px 10px;
+}
+.profile + .button {
+	border-bottom: 1px solid var(--c-border-color);
+}
+.button {
+	background-color: transparent;
+	text-align: inherit;
+	width: 100%;
+	padding: 15px 10px;
+}
+.button:hover {
+	background-color: var(--c-border-color);
+}
+.button + .button:hover {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}

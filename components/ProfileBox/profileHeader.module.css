@@ -1,9 +1,10 @@
 .box {
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
-.modal {
-}
+
 .body {
-	font-size: 15px;
 	margin-left: 10px;
 	text-align: left;
 }
@@ -14,11 +15,4 @@
 .icon {
 	margin-left: auto;
 	margin-right: 10px;
-}
-
-@media screen and (max-width: 1240px) {
-	.box {
-		width: 43px;
-		height: 43px;
-	}
 }
