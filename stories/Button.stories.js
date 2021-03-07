@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../components/Sidebar/button';
 import MenuButton from '../components/Sidebar/menuButton';
 import ThemeButton from '../components/Sidebar/themeButton';
-import Nav from '../components/Sidebar/nav';
+import Nav from '../components/Navigation/nav';
 import { Home } from '../components/Icons';
 import TitleBold from '../components/Sidebar/textBold';
 import Stack from '../components/Layout/stack';

@@ -2,8 +2,8 @@
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 50px;
-	background-color: rgb(145, 105, 105);
-	border: 5px solid rgb(206, 91, 91);
+	background-color: rgba(196, 192, 192, 0.568);
+	border: 5px solid rgba(240, 240, 240, 0.452);
 	border-radius: 20px;
 	padding: 20px;
 }

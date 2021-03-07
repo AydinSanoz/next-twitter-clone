@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import StoreContext from '../../store';
+import StoreContext from '../../store/store';
 import styles from './theme.module.css';
 
 function Theme() {

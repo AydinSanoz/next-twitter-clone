@@ -1,0 +1,32 @@
+.button {
+	background-color: transparent;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--c-text-primary);
+	transition: var(--fade);
+	border-radius: 99px;
+	outline: none;
+	text-decoration: none;
+}
+.button:hover {
+	background-color: var(--c-button-color-10);
+	color: var(--c-template);
+}
+.regular {
+	border-radius: 0px;
+	padding: auto;
+}
+
+.fullWidth {
+	width: 100%;
+	max-width: 225px;
+}
+
+.big {
+	height: 48px;
+}
+
+/*# sourceMappingURL=button.module.css.map */

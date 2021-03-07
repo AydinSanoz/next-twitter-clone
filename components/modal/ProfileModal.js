@@ -1,7 +1,7 @@
 import React from 'react';
-import ProfileHeader from '../ProfileBox/profileHeader';
-import Button from '../Sidebar/button';
-import TextBold from '../Sidebar/textBold';
+import ProfileHeader from './profileHeader';
+import Button from '../Buttons/button';
+import TextBold from '../Typography/textBold';
 import styles from './ProfileModal.module.css';
 
 function ProfileModal({ name = 'Cansu Dere ', slug = '@cansudere', src }) {

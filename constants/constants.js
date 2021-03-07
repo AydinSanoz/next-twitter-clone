@@ -80,3 +80,26 @@ export const Menu = [
 		notify: null,
 	},
 ];
+
+export const FooterMenu = [
+	{
+		name: 'Tweets',
+		path: '',
+		key: 'tweet',
+	},
+	{
+		name: 'Tweets & Reply',
+		path: '/withReply',
+		key: 'withReply',
+	},
+	{
+		name: 'Media',
+		path: '/media',
+		key: 'media',
+	},
+	{
+		name: 'Likes',
+		path: '/likes',
+		key: 'likes',
+	},
+];

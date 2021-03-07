@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Icons from '../components/Icons';
-import Photo from '../components/ProfileBox/photo';
+import Avatar from '../components/ProfileBox/avatar';
 import ProfileBox from '../components/ProfileBox/profileBox';
 
 export default {
@@ -42,6 +42,6 @@ export const Icon = () => (
 	</div>
 );
 
-export const Avatar = () => <Photo></Photo>;
+export const Photo = () => <Avatar></Avatar>;
 
 export const Profile = () => <ProfileBox full></ProfileBox>;

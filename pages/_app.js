@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import StoreContext from '../store';
+import StoreContext from '../store/store';
 
 import '../styles/app.css';
 import '../styles/variables.css';
