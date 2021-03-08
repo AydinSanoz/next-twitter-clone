@@ -2,6 +2,7 @@ export { default as Bookmarks } from './Bookmarks';
 export { default as Bookmarksfill } from './Bookmarksfill';
 export { default as Calender } from './Calender';
 export { default as Chart } from './Chart';
+export { default as Close } from './Close';
 export { default as Emoji } from './Emoji';
 export { default as Explore } from './Explore';
 export { default as Explorefill } from './Explorefill';

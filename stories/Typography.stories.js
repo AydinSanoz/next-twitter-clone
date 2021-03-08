@@ -1,5 +1,5 @@
 import React from 'react';
-import TextBold from '../components/Sidebar/textBold';
+import TextBold from '../components/Typography/textBold';
 
 export default {
 	title: 'Typography',

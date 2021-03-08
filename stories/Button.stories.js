@@ -1,10 +1,10 @@
 import React from 'react';
-import Button from '../components/Sidebar/button';
-import MenuButton from '../components/Sidebar/menuButton';
-import ThemeButton from '../components/Sidebar/themeButton';
+import Button from '../components/Buttons/button';
+import MenuButton from '../components/Buttons/menuButton';
+import ThemeButton from '../components/Buttons/themeButton';
 import Nav from '../components/Navigation/nav';
 import { Home } from '../components/Icons';
-import TitleBold from '../components/Sidebar/textBold';
+import TitleBold from '../components/Typography/textBold';
 import Stack from '../components/Layout/stack';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
