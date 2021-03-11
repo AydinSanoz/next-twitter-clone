@@ -1,8 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout/layout';
+import HeaderComp from '../components/Header/header';
 
-function Lists({ Children }) {
-	return <Layout>Lists</Layout>;
+function Lists({ children, ...props }) {
+	return (
+		<Layout>
+			<HeaderComp>Lists</HeaderComp>
+		</Layout>
+	);
 }
 
 export default Lists;

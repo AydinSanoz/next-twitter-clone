@@ -7,6 +7,7 @@ export { default as Emoji } from './Emoji';
 export { default as Explore } from './Explore';
 export { default as Explorefill } from './Explorefill';
 export { default as Gif } from './Gif';
+export { default as Globe } from './Globe';
 export { default as Home } from './Home';
 export { default as Homefill } from './Homefill';
 export { default as Like } from './Like';

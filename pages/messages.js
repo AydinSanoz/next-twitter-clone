@@ -1,8 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout/layout';
+import HeaderComp from '../components/Header/header';
 
-function Messages({ Children }) {
-	return <Layout>Messages</Layout>;
+function Messages({ children }) {
+	return (
+		<Layout>
+			<HeaderComp>Messages</HeaderComp>
+		</Layout>
+	);
 }
 
 export default Messages;

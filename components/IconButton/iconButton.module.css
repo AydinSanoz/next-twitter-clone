@@ -9,10 +9,10 @@
 	align-items: center;
 }
 .button svg {
-	border-radius: 99px;
-	padding: 8px;
+	padding: 5px;
 }
 .button svg:hover {
 	background-color: var(--c-button-color-10);
 	color: var(--c-template);
+	border-radius: 99px;
 }

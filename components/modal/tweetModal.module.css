@@ -1,0 +1,78 @@
+.container {
+	margin: 17px 17px 4px;
+
+	color: var(--c-text-primary);
+	display: grid;
+	grid-template-columns: 48px 1fr;
+	grid-template-areas: 'avatar test';
+	gap: 5px;
+}
+
+.avatar {
+	grid-column: avatar;
+}
+
+.content {
+	grid-column: test;
+}
+.content * {
+	color: var(--c-template);
+}
+.closeTitle {
+	width: 100%;
+	border-bottom: 1px solid var(--c-border-color);
+}
+.iconCloseBtn {
+	padding: 17px 17px;
+	max-width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	font-size: 2.2rem;
+}
+
+.content textarea {
+	width: 100%;
+	min-height: 170px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: inherit;
+	font-size: 19px;
+	background-color: transparent;
+	outline: none;
+	resize: none;
+	white-space: nowrap;
+	color: var(--c-text-primary);
+}
+.globe {
+	font-size: 1.1rem;
+	margin-right: 4px;
+}
+
+.footer {
+	border-top: 1px solid var(--c-border-color);
+	display: flex;
+	align-items: center;
+	color: var(--c-template);
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.navLeft {
+	display: flex;
+	align-items: center;
+}
+.navRight {
+}
+.tweetButton {
+	width: 80px;
+	background-color: var(--c-template);
+	margin-left: 12px;
+}
+.tweetButton span {
+	color: #fff;
+}
+.tweetButton:hover {
+	background-color: #1da0f2e7;
+}
+.footer svg {
+	font-size: 2.2rem;
+}

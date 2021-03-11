@@ -7,10 +7,15 @@ import '../styles/variables.css';
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
 	const [theme, setTheme] = useState('light');
+	const [showModal, setShowModal] = useState(false);
 
 	const changeTheme = (theme) => {
 		setTheme(theme);
 		localStorage.setItem('THEME', theme);
+	};
+
+	const onModalToggle = () => {
+		setShowModal(!showModal);
 	};
 
 	useEffect(() => {
@@ -24,7 +29,9 @@ export default function MyApp({ Component, pageProps }) {
 	}, [theme]);
 
 	return (
-		<StoreContext.Provider value={{ theme, changeTheme }}>
+		<StoreContext.Provider
+			value={{ theme, changeTheme, onModalToggle, showModal }}
+		>
 			<Component {...pageProps} />
 		</StoreContext.Provider>
 	);

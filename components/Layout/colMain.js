@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './colMain.module.css';
 
-function Main({ children }) {
+function Main({ children, ...props }) {
 	return <div className={styles.main}>{children}</div>;
 }
 

@@ -1,7 +1,9 @@
 import React from 'react';
+
 import ProfileHeader from './profileHeader';
 import Button from '../Buttons/button';
 import TextBold from '../Typography/textBold';
+
 import styles from './ProfileModal.module.css';
 
 function ProfileModal({ name = 'Cansu Dere ', slug = '@cansudere', src }) {
@@ -13,12 +15,12 @@ function ProfileModal({ name = 'Cansu Dere ', slug = '@cansudere', src }) {
 				name={name}
 				slug={slug}
 			/>
-			<button className={styles.button} href="/explore">
+			<Button regular className={styles.button} href="/explore">
 				<TextBold className={styles.account}>Add an existing account</TextBold>
-			</button>
-			<button className={styles.button} href="/">
+			</Button>
+			<Button regular className={styles.button} href="/">
 				<TextBold className={styles.logout}>Log out {slug}</TextBold>
-			</button>
+			</Button>
 		</div>
 	);
 }

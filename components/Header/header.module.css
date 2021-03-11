@@ -1,0 +1,8 @@
+.container {
+	width: 100%;
+	min-height: 50px;
+	border-bottom: 1px solid var(--c-border-color);
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
