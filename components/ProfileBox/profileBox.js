@@ -4,7 +4,8 @@ import TextBold from '../Typography/textBold';
 import { Option } from '../Icons';
 import styles from './profileBox.module.css';
 import Button from '../Buttons/button';
-import ProfileModal from '../Modal/ProfileModal';
+
+import ProfileModal from '../Modal/profileModal';
 
 function ProfileBox({
 	src,
