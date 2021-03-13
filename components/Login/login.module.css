@@ -1,0 +1,93 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+}
+.body {
+	flex: 1;
+
+	display: grid;
+	grid-template-columns: 1fr 800px;
+	grid-template-areas: 'img text';
+}
+.img {
+	grid-area: img;
+	background-image: url('https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png');
+	background-size: cover;
+	padding: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.img svg {
+	width: 60%;
+	height: 60%;
+}
+.text {
+	grid-area: text;
+	padding: 16px;
+}
+.text * {
+	color: rgb(217, 217, 217);
+}
+.textContainer {
+	padding: 20px;
+}
+.textContainer svg {
+	width: 55px;
+	height: 55px;
+	padding-bottom: 12px;
+}
+.textContainer h1 {
+	font-size: 85px;
+	margin: 45px 0px;
+}
+.textContainer h3 {
+	font-size: 45px;
+	margin-bottom: 32px;
+}
+.buttons a {
+	margin-bottom: 20px;
+	background-color: var(--c-template);
+	font-size: 15px;
+	font-weight: bold;
+	max-width: 411px;
+}
+.buttons a + a {
+	background-color: transparent;
+	border: 1px solid var(--c-template);
+}
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 30px;
+}
+.footer * {
+	padding: 10px 10px;
+	text-decoration: none;
+	color: rgba(217, 217, 217, 0.5);
+}
+
+@media screen and (max-width: 985px) {
+	.body {
+		grid-template-rows: 1fr 300px;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'text'
+			'img';
+	}
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+	.buttons a {
+		max-width: 250px;
+		margin-left: 20px;
+	}
+	.text {
+		max-width: 600px;
+		margin: auto;
+	}
+}

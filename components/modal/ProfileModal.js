@@ -4,7 +4,7 @@ import ProfileHeader from './profileHeader';
 import Button from '../Buttons/button';
 import TextBold from '../Typography/textBold';
 
-import styles from './ProfileModal.module.css';
+import styles from './profileModal.module.css';
 
 function ProfileModal({ name = 'Cansu Dere ', slug = '@cansudere', src }) {
 	return (

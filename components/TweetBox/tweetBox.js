@@ -7,6 +7,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 
 import TextBold from '../Typography/textBold';
 import IconButton from '../IconButton/iconButton';
+import { db } from '../../firebase/firebase';
 
 function TweetBox({
 	avatar,
@@ -22,7 +23,12 @@ function TweetBox({
 		setInput(e.target.value);
 	}
 	function handleSubmit() {
-		console.log(input);
+		console.log(db);
+		db.collection('tweets').add({
+			name: 'aydin',
+			id: 12,
+			text: `${input}`,
+		});
 		setInput('');
 	}
 	return (

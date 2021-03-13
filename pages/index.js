@@ -1,26 +1,12 @@
 import React from 'react';
-import Tweet from '../components/Tweet/tweet';
-import Layout from '../components/Layout/layout';
-import useSwr from 'swr';
-import { fetcher } from '../lib/fetcher';
-import CircularBar from '../components/Icons/Loading';
-import HeaderCom from '../components/Header/header';
-import TweetBox from '../components/TweetBox/tweetBox';
+import Login from '../components/Login/login';
 
-function HomePage({ children, ...props }) {
-	const { data, error } = useSwr('/api/movie', fetcher);
-
+function Index() {
 	return (
-		<Layout>
-			<HeaderCom>Home</HeaderCom>
-			<TweetBox></TweetBox>
-			{!data ? (
-				<CircularBar />
-			) : (
-				data?.results?.map((tweet) => <Tweet key={tweet.id} {...tweet} />)
-			)}
-		</Layout>
+		<div>
+			<Login></Login>
+		</div>
 	);
 }
 
-export default HomePage;
+export default Index;

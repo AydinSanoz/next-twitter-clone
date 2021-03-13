@@ -35,7 +35,7 @@
 	background-color: transparent;
 	outline: none;
 	resize: none;
-	white-space: nowrap;
+	white-space: pre-wrap;
 	color: var(--c-text-primary);
 }
 .footer {

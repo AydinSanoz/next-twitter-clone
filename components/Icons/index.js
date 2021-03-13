@@ -10,6 +10,7 @@ export { default as Gif } from './Gif';
 export { default as Globe } from './Globe';
 export { default as Home } from './Home';
 export { default as Homefill } from './Homefill';
+export { default as LoginImg } from './LoginImg';
 export { default as Like } from './Like';
 export { default as Likefill } from './Likefill';
 export { default as Lists } from './Lists';
