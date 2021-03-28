@@ -6,9 +6,9 @@ export default async function movieHandler(req, res) {
 		params: {
 			api_key: api_key,
 			language: 'en-US',
-			query: 'brave',
+			query: 'bourne',
 			page: 1,
-			include_adult: false,
+			include_adult: true,
 		},
 	});
 	res.status(200).json(JSON.stringify(data));

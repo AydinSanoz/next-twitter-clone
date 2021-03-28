@@ -6,7 +6,7 @@ function SvgGlobe(props) {
 			width="1em"
 			height="1em"
 			viewBox="0 0 24 24"
-			class="r-13gxpu9 r-4qtqp9 r-yyyyoo r-1q142lx r-50lct3 r-1sp7lne r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue"
+			className="r-13gxpu9 r-4qtqp9 r-yyyyoo r-1q142lx r-50lct3 r-1sp7lne r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1srniue"
 			fill="none"
 			{...props}
 		>

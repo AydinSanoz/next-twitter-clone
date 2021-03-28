@@ -7,7 +7,7 @@ function SvgLoginImg(props) {
 			width="1em"
 			height="1em"
 			fill="none"
-			class="r-jwli3a r-4qtqp9 r-yyyyoo r-labphf r-1777fci r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr"
+			className="r-jwli3a r-4qtqp9 r-yyyyoo r-labphf r-1777fci r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr"
 			{...props}
 		>
 			<g>

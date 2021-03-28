@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import StoreContext from '../store/store';
+import { auth } from '../firebase/firebase';
+import { useRouter } from 'next/router';
 
 import '../styles/app.css';
 import '../styles/variables.css';
@@ -8,6 +10,8 @@ import '../styles/variables.css';
 export default function MyApp({ Component, pageProps }) {
 	const [theme, setTheme] = useState('light');
 	const [showModal, setShowModal] = useState(false);
+	const [user, setUser] = useState('');
+	const router = useRouter();
 
 	const changeTheme = (theme) => {
 		setTheme(theme);
@@ -28,9 +32,15 @@ export default function MyApp({ Component, pageProps }) {
 		};
 	}, [theme]);
 
+	useEffect(() => {
+		auth.onAuthStateChanged((currentUser) => {
+			!user ? router.push('/') : setUser(currentUser);
+		});
+	}, [auth.currentUser]);
+
 	return (
 		<StoreContext.Provider
-			value={{ theme, changeTheme, onModalToggle, showModal }}
+			value={{ theme, changeTheme, onModalToggle, showModal, user, setUser }}
 		>
 			<Component {...pageProps} />
 		</StoreContext.Provider>

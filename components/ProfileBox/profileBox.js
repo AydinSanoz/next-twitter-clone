@@ -4,8 +4,8 @@ import TextBold from '../Typography/textBold';
 import { Option } from '../Icons';
 import styles from './profileBox.module.css';
 import Button from '../Buttons/button';
-
 import ProfileModal from '../Modal/profileModal';
+import { auth } from '../../firebase/firebase';
 
 function ProfileBox({
 	src,
@@ -15,6 +15,8 @@ function ProfileBox({
 	...props
 }) {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
+	const user = auth.currentUser;
+	console.log('🚀 ~ file: profileBox.js ~ line 19 ~ user', user);
 
 	function handleModal() {
 		setModalIsOpen(!modalIsOpen);
@@ -22,15 +24,15 @@ function ProfileBox({
 	return (
 		<Button className={styles.box} onClick={handleModal} {...props}>
 			{modalIsOpen && <ProfileModal className={styles.modal} />}
-			<Avatar src={src} />
+			<Avatar src={user?.photoURL} />
 			{!flat && (
 				<>
 					<div className={styles.body}>
 						<TextBold bold small>
-							{name}
+							{user?.displayName}
 						</TextBold>
 						<TextBold gray small>
-							{slug}
+							{`@${user?.email?.split('@')[0]}`}
 						</TextBold>
 					</div>
 					<div className={styles.icon}>

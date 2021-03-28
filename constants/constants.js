@@ -1,4 +1,9 @@
+import { useContext } from 'react';
 import * as Icon from '../components/Icons';
+import StoreContext from '../store/store';
+import { auth } from '../firebase/firebase';
+
+const user = auth.currentUser;
 
 export default {
 	DESKTOP: 1240,
@@ -9,7 +14,7 @@ export const Menu = [
 	{
 		key: 'Twitter',
 		name: '',
-		path: '/',
+		path: '/home',
 		icon: <Icon.Twitter style={{ fontSize: 30 }} />,
 		selectedIcon: <Icon.Twitter style={{ fontSize: 30 }} />,
 		notify: null,
@@ -17,7 +22,7 @@ export const Menu = [
 	{
 		key: 'Home',
 		name: 'Home',
-		path: '/',
+		path: '/home',
 		icon: <Icon.Home />,
 		selectedIcon: <Icon.Homefill />,
 		notify: null,
@@ -50,7 +55,7 @@ export const Menu = [
 	{
 		key: 'Bookmarks',
 		name: 'Bookmarks',
-		path: '/bookmarks',
+		path: `bookmarks`,
 		icon: <Icon.Bookmarks />,
 		selectedIcon: <Icon.Bookmarksfill />,
 		notify: null,

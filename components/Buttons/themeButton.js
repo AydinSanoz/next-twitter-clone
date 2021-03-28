@@ -6,15 +6,14 @@ import { Tweet } from '../Icons';
 import TextBold from '../Typography/textBold';
 
 function ThemeButton({
-	title = 'Tweet',
 	flat = false,
-	children,
+	children = 'Tweet',
 	className,
 	...props
 }) {
 	return (
 		<Button className={cn(styles.themeButton, className)} {...props}>
-			{flat ? <Tweet /> : <TextBold bold>{title}</TextBold>}
+			{flat ? <Tweet /> : <TextBold bold>{children}</TextBold>}
 		</Button>
 	);
 }

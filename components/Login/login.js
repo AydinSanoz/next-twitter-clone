@@ -1,18 +1,9 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import LoginImg from '../Icons/LoginImg';
 import styles from './login.module.css';
-import SignButton from '../Buttons/button';
+import Button from '../Buttons/button';
 
 function Login() {
-	const [user, setUser] = useState('');
-	const route = useRouter();
-
-	useEffect(() => {
-		user ? route.push('/home') : null;
-	}, [user]);
-
 	return (
 		<div className={styles.container}>
 			<div className={styles.body}>
@@ -25,12 +16,12 @@ function Login() {
 						<h1>Şu anda olup bitenler</h1>
 						<h3>Twitter'a bugün katıl</h3>
 						<div className={styles.buttons}>
-							<SignButton href="#" full big className={styles.themeButton}>
+							<Button href="#" full big>
 								Kaydol
-							</SignButton>
-							<SignButton href="#" full big className={styles.themeButton}>
-								Register
-							</SignButton>
+							</Button>
+							<Button href="/login" full big>
+								Giriş Yap
+							</Button>
 						</div>
 					</div>
 				</div>

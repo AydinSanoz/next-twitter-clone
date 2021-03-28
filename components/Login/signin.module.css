@@ -1,0 +1,72 @@
+.text {
+	padding: 16px;
+	background-color: rgb(0, 0, 0);
+	height: 100vh;
+}
+.text * {
+	color: rgb(217, 217, 217);
+}
+.textContainer {
+	padding: 20px;
+	width: 400px;
+	margin: auto;
+}
+.textContainer svg {
+	width: 55px;
+	height: 55px;
+	padding-bottom: 12px;
+}
+
+.textContainer h3 {
+	font-size: 35px;
+	margin-bottom: 32px;
+}
+.input {
+	display: flex;
+	flex-direction: column;
+}
+
+.input input {
+	width: 100%;
+}
+.textField {
+}
+
+.textField label {
+	color: #fff;
+	font-size: 20px;
+	padding-left: 10px;
+}
+.textField input {
+	margin: 2px 10px;
+}
+.fill input {
+	background-color: #fff;
+	color: #000;
+}
+.fill label {
+	color: var(--c-template);
+}
+.fill p {
+	color: red;
+}
+.err {
+	color: red;
+}
+
+.submitBtn {
+	margin-bottom: 20px;
+	background-color: var(--c-template);
+	font-size: 19px;
+	font-weight: bold;
+	max-width: 100%;
+}
+.passive {
+	background-color: red;
+}
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}

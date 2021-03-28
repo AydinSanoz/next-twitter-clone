@@ -5,13 +5,7 @@ import { Option } from '../Icons';
 import styles from './profileHeader.module.css';
 import cn from 'classnames';
 
-function ProfileHeader({
-	src,
-	slug = '@cansudere',
-	name = 'Cansu Dere',
-	className,
-	...props
-}) {
+function ProfileHeader({ src, slug, name, className, ...props }) {
 	return (
 		<div className={cn(styles.box, className)} {...props}>
 			<Avatar className={styles.avatar} src={src} />

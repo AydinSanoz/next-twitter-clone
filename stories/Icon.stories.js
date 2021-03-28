@@ -42,6 +42,6 @@ export const Icon = () => (
 	</div>
 );
 
-// export const Photo = () => <Avatar></Avatar>;
+export const Photo = () => <Avatar></Avatar>;
 
-// export const Profile = () => <ProfileBox full></ProfileBox>;
+export const Profile = () => <ProfileBox full></ProfileBox>;

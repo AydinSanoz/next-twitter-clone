@@ -15,11 +15,13 @@
     "sass": "sass --watch . "
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "css-loader": "^5.0.2",
     "date-fns": "^2.18.0",
     "firebase": "^8.3.0",
+    "formik": "^2.2.6",
     "next": "^10.0.7",
     "postcss": "^8.2.6",
     "postcss-nested": "^5.0.4",
@@ -29,7 +31,8 @@
     "react-dom": "^17.0.1",
     "react-modal": "^3.12.1",
     "style-loader": "^2.0.0",
-    "swr": "^0.4.2"
+    "swr": "^0.4.2",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",

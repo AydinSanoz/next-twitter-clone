@@ -3,9 +3,9 @@ import Link from 'next/link';
 import styles from './button.module.css';
 import cn from 'classnames';
 
-function BaseButton({ children, className, ...props }) {
+function BaseButton({ type = 'button', children, className, ...props }) {
 	return (
-		<button type="button" className={className} {...props}>
+		<button type={type} className={className} {...props}>
 			{children}
 		</button>
 	);

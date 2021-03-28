@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Avatar from '../ProfileBox/avatar';
 import Button from '../Buttons/button';
 import styles from './profileCard.module.css';
@@ -7,6 +7,7 @@ import Calender from '../../components/Icons/Calender';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
 import { FooterMenu } from '../../constants/constants';
+import StoreContext from '../../store/store';
 
 function ProfileCard({
 	avatar,
@@ -18,12 +19,13 @@ function ProfileCard({
 	...props
 }) {
 	const router = useRouter();
+	const { user, setUser } = useContext(StoreContext);
 	const path = router.pathname;
 	console.log(router.pathname);
 
 	return (
 		<div className="container">
-			<TextBold>Cansu Dere</TextBold>
+			<TextBold>{user?.displayName}</TextBold>
 
 			<div className={styles.header}>
 				<div className={styles.background}></div>
@@ -36,9 +38,9 @@ function ProfileCard({
 				</Button>
 
 				<div className={styles.username}>
-					<TextBold bold>Cansu Dere</TextBold>
+					<TextBold bold>{user?.displayName}</TextBold>
 					<TextBold gray small>
-						@cansudere1976
+						@{user?.email?.split('@')[0]}
 					</TextBold>
 				</div>
 
