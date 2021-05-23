@@ -1,6 +1,7 @@
 # Twitter Clone
 ## Project Demo
-- [Twitter Demo] (next-twitter-clone-git-main-aydinsanoz.vercel.app)
+- [TwitterDemo](https://next-twitter-clone-git-main-aydinsanoz.vercel.app/)
+
 
 
 ### Links
